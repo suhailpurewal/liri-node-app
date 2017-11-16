@@ -1,0 +1,24 @@
+console.log('this is loaded');
+
+// var twitterKeys = {
+// 	consumer_key: 'PXHH4A4dMiiByvWpXc0HZcpDI',
+// 	consumer_secret: 'f7ooiKXR1oCsdNPonb2hWqBLfQ0Ji2PcA7Pk56hnONwy9tdqca',
+//   	access_token_key: '289117504-QrCG6jiN1P8BhLRQLLvke6KyZtZTVulUt5EVliLj',
+//   	access_token_secret: 'c3lwyOpinHMAYQZPLCEJToR3LVm6H6wCoIH0wan7AoQ0v',
+// }
+
+var twitterKeys = {
+	consumer_key: 'DYgWH7WnJx33bFHjBK6p9yCW1',
+	consumer_secret: '7uKGX5Y5aXJrvaQsJYgpD333N0T9LOx7FKRwlLxtaXsEdaLFYw',
+  	access_token_key: '931053428050223105-yXqb3GhK36DpRQEHifcSQJM3IyVLLzN',
+  	access_token_secret: 'GJJVYGDgtCWcvGczDPCRtmeQ8SGd5QOUMgTc0hK0kyGIS',
+}
+
+// var spotifyKeys = {
+// 	client_id: '5decabcbeac1417d8efc4515a8b7d8c5',
+//   	client_secret: 'b9b7dcbe12934b7ca3715fa1c5055e20',
+// }
+// module.exports = spotifyKeys;
+module.exports = twitterKeys;
+
+
