@@ -70,13 +70,13 @@ function omdb(){
   if (!error && response.statusCode === 200) {
   	json = JSON.parse(body)
     console.log(colors.rainbow("-------------------------------------------------------------------"));
-    console.log("Title: " + json.Title);
-	console.log("Year: " + json.Year);
-	console.log("IMDB Rating: " + json.imdbRating);
-	console.log("Rotten Tomatoes Rating: " + json.Ratings[2].Value);
-	console.log("Language: " + json.Language);
-	console.log("Plot: " + json.Plot);
-	console.log("Actors: " + json.Actors);
+    console.log("Title: ".green + json.Title.blue);
+	console.log("Year: ".green + json.Year.blue);
+	console.log("IMDB Rating: ".green + json.imdbRating.blue);
+	console.log("Rotten Tomatoes Rating: ".green + json.Ratings[2].Value.blue);
+	console.log("Language: ".green + json.Language.blue);
+	console.log("Plot: ".green + json.Plot.blue);
+	console.log("Actors: ".green + json.Actors.blue);
 	console.log(colors.rainbow("-------------------------------------------------------------------"));
   }
 });
