@@ -1,10 +1,16 @@
 var fs = require("fs");
 var keys = require("./keys.js");
 var twitter = require("twitter");
-var spotify = require ("node-spotify-api");
+var Spotify = require ("node-spotify-api");
+var spotify = new Spotify({
+  id: "5decabcbeac1417d8efc4515a8b7d8c5",
+  secret: "b9b7dcbe12934b7ca3715fa1c5055e20",
+});
 var request = require("request");
 var colors = require("colors");
 var twitterKeys = keys.twitterKeys;
+var random = "./random.txt"
+var log = "./log.txt"
 var command = process.argv[2];
 var input = process.argv[3];
 	for(i=4; i<process.argv.length; i++){
@@ -20,7 +26,7 @@ switch (command){
 
 	case "spotify-this-song":
 	console.log("in spotify state")
-	// spotify();
+	spotifysearch();
 	break;
 
 	case "movie-this":
@@ -30,7 +36,7 @@ switch (command){
 
 	case "do-what-it-says":
 	console.log("in random state")
-	// doIt();
+	doIt();
 	break;
 
 	default:
@@ -44,44 +50,107 @@ function tweet(){
 		if(!twitterUsername){
 			twitterUsername = "suhail_purewal";
 		}
-		
+			fs.appendFile('./log.txt', 'User Command: node liri.js my-tweets\n\n', (err) => {
+			if (err) throw err;
+			});		
 		client.get("statuses/user_timeline/", params, function(error, data, response){
 			if(!error){
 				for (i=0; i<data.length; i++){
-					var trimmedTweet = ('Number: ' + (i+1) + '\n' + data[i].created_at + '\n' + data[i].text + '\n');
-					console.log(trimmedTweet);
-					console.log("---------------------")
+					var trimmedTweet = ('Number: ' + (i+1) + '\n' + data[i].created_at + '\n' + data[i].text.red + '\n');
+				fs.appendFile('./log.txt', 'LIRI Response:\n\n' + trimmedTweet + '\n', (err) => {
+				if (err) throw err;
+				});
+					console.log(trimmedTweet.yellow);
+					console.log("------------------------------------------------------".red)
 				}
 			}
+			
+			
 			else if(error){
 				console.log(error)
-		}
+		}	
 		});
 	}
-// function spotify(){
+function spotifysearch(song){
+	var song = input;
+	if(song === undefined){
+		song = "Protect Ya Neck"
+	}
+		fs.appendFile('./log.txt', 'User Command: node liri.js spotify-this-song\n\n', (err) => {
+		if (err) throw err;
+		});		
+	spotify.search({ type: 'track', query: song }, function(err, data) {
+  if (!err) {
+  	var songInfo = data.tracks.items;
+				for (var i = 0; i < 3; i++) {
+					if (songInfo[i] != undefined) {
+						var spotifyResults =
+						"Artist: " + songInfo[i].artists[0].name + "\r\n" +
+						"Song: " + songInfo[i].name + "\r\n" +
+						"Album the song is from: " + songInfo[i].album.name + "\r\n" +
+						"Preview URL: " + songInfo[i].preview_url + "\r\n" + 
+						i + "-----------------------------------------------------------------------------------------------".red + "\r\n";
+						console.log(spotifyResults.blue);
+						fs.appendFile('./log.txt', 'LIRI Response:\n\n' + spotifyResults + '\n', (err) => {
+						if (err) throw err;
+						});
+					}
+				 else {
+					console.log("Song not found! - Try Again!")
+					break;
+				}
+			}
+    
+  } else {
+  	return console.log('Error occurred: ' + err);
+  }
+ 
+});
 
-// }
-function omdb(){
+}
+function omdb(movie){
 	var movie = input;
 	if(movie === undefined){
 	movie = "Mr. Nobody";
 	}
-	request("http://www.omdbapi.com/?t=" + movie + "&y=&plot=full&tomatoes=true&apikey=trilogy", function(error, response, body) {
+	var movieSearch = movie;
+	fs.appendFile('./log.txt', 'User Command: node liri.js movie-this\n\n', (err) => {
+	if (err) throw err;
+	});		
+	request("http://www.omdbapi.com/?t=" + movieSearch + "&y=&plot=full&tomatoes=true&apikey=trilogy", function(error, response, body) {
   if (!error && response.statusCode === 200) {
   	json = JSON.parse(body)
-    console.log(colors.rainbow("-------------------------------------------------------------------"));
-    console.log("Title: ".green + json.Title.blue);
-	console.log("Year: ".green + json.Year.blue);
-	console.log("IMDB Rating: ".green + json.imdbRating.blue);
-	console.log("Rotten Tomatoes Rating: ".green + json.Ratings[2].Value.blue);
-	console.log("Language: ".green + json.Language.blue);
-	console.log("Plot: ".green + json.Plot.blue);
-	console.log("Actors: ".green + json.Actors.blue);
-	console.log(colors.rainbow("-------------------------------------------------------------------"));
-  }
+  	var movieResults = 
+    "-------------------------------------------------------------------".red + "\r\n" +
+ 	"Title: ".green + json.Title.blue + "\r\n" +
+	"Year: ".green + json.Year.blue + "\r\n" +
+	"IMDB Rating: ".green + json.imdbRating.blue + "\r\n" +
+	"Rotten Tomatoes Rating: ".green + json.Ratings[2].Value.blue + "\r\n" +
+	"Language: ".green + json.Language.blue + "\r\n" +
+	"Plot: ".green + json.Plot.blue + "\r\n" +
+	"Actors: ".green + json.Actors.blue + "\r\n" +
+	"-------------------------------------------------------------------".red + "\r\n";
+	console.log(movieResults);
+	}
+	fs.appendFile('./log.txt', 'LIRI Response:\n\n' + movieResults + '\n', (err) => {
+	if (err) throw err;
+	});
 });
 
 }
-// function doIt(){
+function doIt(){
+	fs.readFile("random.txt", "utf8", function(error, data){
+			if (!error) {
+				var doItResults = data.split(",")
+				spotifysearch(doItResults[1])
+				console.log("handing off to spotify")
+			} else {
+				console.log("Error occurred" + error);
+			}
+		});
+	};
 
-// }
+
+
+
+// i think the only thing left is to make movie & spotify look pretty & to add doIt function and also make it look pretty.
