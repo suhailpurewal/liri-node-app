@@ -123,3 +123,55 @@ Album the song is from: Enter The Wu-Tang Clan - 36 Chambers (Deluxe Version)
 Preview URL: https://p.scdn.co/mp3-preview/85d13a5bbd6dae1cac8d12ffa1a39c41741aa69c?cid=5decabcbeac1417d8efc4515a8b7d8c5
 2[31m-----------------------------------------------------------------------------------------------[39m
 
+User Command: node liri.js spotify-this-song
+
+LIRI Response:
+
+Artist: Wu-Tang Clan
+Song: Protect Ya Neck
+Album the song is from: Enter The Wu-Tang Clan - 36 Chambers (Deluxe Version)
+Preview URL: https://p.scdn.co/mp3-preview/e1e046ca91cf927e535ba512aad294f4f6f4109c?cid=5decabcbeac1417d8efc4515a8b7d8c5
+0[31m-----------------------------------------------------------------------------------------------[39m
+
+LIRI Response:
+
+Artist: Wu-Tang Clan
+Song: Protect Ya Neck
+Album the song is from: Enter The Wu-Tang
+Preview URL: https://p.scdn.co/mp3-preview/ae95b0c18b40b8434a7b373a81b9d20879fb54df?cid=5decabcbeac1417d8efc4515a8b7d8c5
+1[31m-----------------------------------------------------------------------------------------------[39m
+
+LIRI Response:
+
+Artist: Wu-Tang Clan
+Song: Protect Ya Neck - Shao Lin Version
+Album the song is from: Enter The Wu-Tang Clan - 36 Chambers (Deluxe Version)
+Preview URL: https://p.scdn.co/mp3-preview/85d13a5bbd6dae1cac8d12ffa1a39c41741aa69c?cid=5decabcbeac1417d8efc4515a8b7d8c5
+2[31m-----------------------------------------------------------------------------------------------[39m
+
+User Command: node liri.js spotify-this-song
+
+LIRI Response:
+
+Artist: Wu-Tang Clan
+Song: Protect Ya Neck
+Album: Enter The Wu-Tang Clan - 36 Chambers (Deluxe Version)
+Preview Clip URL: https://p.scdn.co/mp3-preview/e1e046ca91cf927e535ba512aad294f4f6f4109c?cid=5decabcbeac1417d8efc4515a8b7d8c5
+0[31m-----------------------------------------------------------------------------------------------[39m
+
+LIRI Response:
+
+Artist: Wu-Tang Clan
+Song: Protect Ya Neck
+Album: Enter The Wu-Tang
+Preview Clip URL: https://p.scdn.co/mp3-preview/ae95b0c18b40b8434a7b373a81b9d20879fb54df?cid=5decabcbeac1417d8efc4515a8b7d8c5
+1[31m-----------------------------------------------------------------------------------------------[39m
+
+LIRI Response:
+
+Artist: Wu-Tang Clan
+Song: Protect Ya Neck - Shao Lin Version
+Album: Enter The Wu-Tang Clan - 36 Chambers (Deluxe Version)
+Preview Clip URL: https://p.scdn.co/mp3-preview/85d13a5bbd6dae1cac8d12ffa1a39c41741aa69c?cid=5decabcbeac1417d8efc4515a8b7d8c5
+2[31m-----------------------------------------------------------------------------------------------[39m
+

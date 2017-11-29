@@ -60,8 +60,8 @@ function tweet(){
 				fs.appendFile('./log.txt', 'LIRI Response:\n\n' + trimmedTweet + '\n', (err) => {
 				if (err) throw err;
 				});
-					console.log(trimmedTweet.yellow);
-					console.log("------------------------------------------------------".red)
+					console.log(trimmedTweet);
+					console.log("------------------------------------------------------")
 				}
 			}
 			
@@ -87,9 +87,9 @@ function spotifysearch(song){
 						var spotifyResults =
 						"Artist: " + songInfo[i].artists[0].name + "\r\n" +
 						"Song: " + songInfo[i].name + "\r\n" +
-						"Album the song is from: " + songInfo[i].album.name + "\r\n" +
-						"Preview URL: " + songInfo[i].preview_url + "\r\n" + 
-						i + "-----------------------------------------------------------------------------------------------".red + "\r\n";
+						"Album: " + songInfo[i].album.name + "\r\n" +
+						"Preview Clip URL: " + songInfo[i].preview_url + "\r\n" + 
+						i + "-----------------------------------------------------------------------------------------------" + "\r\n";
 						console.log(spotifyResults.blue);
 						fs.appendFile('./log.txt', 'LIRI Response:\n\n' + spotifyResults + '\n', (err) => {
 						if (err) throw err;
@@ -121,15 +121,15 @@ function omdb(movie){
   if (!error && response.statusCode === 200) {
   	json = JSON.parse(body)
   	var movieResults = 
-    "-------------------------------------------------------------------".red + "\r\n" +
- 	"Title: ".green + json.Title.blue + "\r\n" +
-	"Year: ".green + json.Year.blue + "\r\n" +
-	"IMDB Rating: ".green + json.imdbRating.blue + "\r\n" +
-	"Rotten Tomatoes Rating: ".green + json.Ratings[2].Value.blue + "\r\n" +
-	"Language: ".green + json.Language.blue + "\r\n" +
-	"Plot: ".green + json.Plot.blue + "\r\n" +
-	"Actors: ".green + json.Actors.blue + "\r\n" +
-	"-------------------------------------------------------------------".red + "\r\n";
+    "-------------------------------------------------------------------" + "\r\n" +
+ 	"Title: " + json.Title + "\r\n" +
+	"Year: " + json.Year + "\r\n" +
+	"IMDB Rating: " + json.imdbRating + "\r\n" +
+	"Rotten Tomatoes Rating: " + json.Ratings[2].Value + "\r\n" +
+	"Language: " + json.Language + "\r\n" +
+	"Plot: " + json.Plot + "\r\n" +
+	"Actors: " + json.Actors + "\r\n" +
+	"-------------------------------------------------------------------" + "\r\n";
 	console.log(movieResults);
 	}
 	fs.appendFile('./log.txt', 'LIRI Response:\n\n' + movieResults + '\n', (err) => {
