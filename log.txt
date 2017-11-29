@@ -2,176 +2,169 @@ User Command: node liri.js my-tweets
 
 LIRI Response:
 
-Number: 1
+-----------------------------------------------------------------------
+Tweet Number: 1
+Wed Nov 29 01:01:47 +0000 2017
+Philip, you are my favorite TA.
+-----------------------------------------------------------------------
+
+LIRI Response:
+
+-----------------------------------------------------------------------
+Tweet Number: 2
+Wed Nov 29 01:01:38 +0000 2017
+Josef, you are my favorite TA.
+-----------------------------------------------------------------------
+
+LIRI Response:
+
+-----------------------------------------------------------------------
+Tweet Number: 3
 Thu Nov 16 07:00:34 +0000 2017
-[31mtweet test tweet test tweet test tweet test[39m
+tweet test tweet test tweet test tweet test
+-----------------------------------------------------------------------
 
 LIRI Response:
 
-Number: 2
+-----------------------------------------------------------------------
+Tweet Number: 4
 Thu Nov 16 07:00:25 +0000 2017
-[31mprobably need to add a few more test tweets[39m
+probably need to add a few more test tweets
+-----------------------------------------------------------------------
 
 LIRI Response:
 
-Number: 3
+-----------------------------------------------------------------------
+Tweet Number: 5
 Thu Nov 16 07:00:16 +0000 2017
-[31mhow many more test tweets can i make?[39m
+how many more test tweets can i make?
+-----------------------------------------------------------------------
 
 LIRI Response:
 
-Number: 4
+-----------------------------------------------------------------------
+Tweet Number: 6
 Thu Nov 16 07:00:06 +0000 2017
-[31manother test tweet[39m
+another test tweet
+-----------------------------------------------------------------------
 
 LIRI Response:
 
-Number: 5
+-----------------------------------------------------------------------
+Tweet Number: 7
 Thu Nov 16 06:59:52 +0000 2017
-[31mtweeting some stuff for testing[39m
-
+tweeting some stuff for testing
+-----------------------------------------------------------------------
 
 User Command: node liri.js movie-this
 
 LIRI Response:
 
-[31m-------------------------------------------------------------------[39m
-[32mTitle: [39m[34mTitanic[39m
-[32mYear: [39m[34m1997[39m
-[32mIMDB Rating: [39m[34m7.8[39m
-[32mRotten Tomatoes Rating: [39m[34m74/100[39m
-[32mLanguage: [39m[34mEnglish, Swedish[39m
-[32mPlot: [39m[34m84 years later, a 100 year-old woman named Rose DeWitt Bukater tells the story to her granddaughter Lizzy Calvert, Brock Lovett, Lewis Bodine, Bobby Buell and Anatoly Mikailavich on the Keldysh about her life set in April 10th 1912, on a ship called Titanic when young Rose boards the departing ship with the upper-class passengers and her mother, Ruth DeWitt Bukater, and her fiancé, Caledon Hockley. Meanwhile, a drifter and artist named Jack Dawson and his best friend Fabrizio De Rossi win third-class tickets to the ship in a game. And she explains the whole story from departure until the death of Titanic on its first and last voyage April 15th, 1912 at 2:20 in the morning.[39m
-[32mActors: [39m[34mLeonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates[39m
-[31m-------------------------------------------------------------------[39m
+-------------------------------------------------------------------
+Title: Cars 2
+Year: 2011
+IMDB Rating: 6.2
+Rotten Tomatoes Rating: 57/100
+Language: English, Japanese, Italian, French
+Plot: The famous race car Lightning McQueen and his team are invited to compete in the World Grand Prix race. There, McQueen's best friend Mater, finds himself involved in international espionage, and alongside two professional British spies, attempts to uncover a secret plan led by a mysterious mastermind and his criminal gang, which threatens the lives of all competitors in the tournament.
+Actors: Larry the Cable Guy, Owen Wilson, Michael Caine, Emily Mortimer
+-------------------------------------------------------------------
+
+User Command: node liri.js movie-this
+
+LIRI Response:
+
+-------------------------------------------------------------------
+Title: Trading Places
+Year: 1983
+IMDB Rating: 7.5
+Rotten Tomatoes Rating: 69/100
+Language: English
+Plot: Louis Winthorpe is a businessman who works for commodities brokerage firm of Duke and Duke owned by the brothers Mortimer and Randolph Duke. Now they bicker over the most trivial of matters and what they are bickering about is whether it's a person's environment or heredity that determines how well they will do in life. When Winthorpe bumps into Billy Ray Valentine, a street hustler and assumes he is trying to rob him, he has him arrested. Upon seeing how different the two men are, the brothers decide to make a wager as to what would happen if Winthorpe loses his job, his home and is shunned by everyone he knows and if Valentine was given Winthorpe's job. So they proceed to have Winthorpe arrested and to be placed in a compromising position in front of his girlfriend. So all he has to rely on is the hooker who was hired to ruin him.
+Actors: Denholm Elliott, Dan Aykroyd, Maurice Woods, Richard D. Fisher Jr.
+-------------------------------------------------------------------
 
 User Command: node liri.js spotify-this-song
 
 LIRI Response:
 
-Artist: Wu-Tang Clan
-Song: Protect Ya Neck
-Album the song is from: Enter The Wu-Tang Clan - 36 Chambers (Deluxe Version)
-Preview URL: https://p.scdn.co/mp3-preview/e1e046ca91cf927e535ba512aad294f4f6f4109c?cid=5decabcbeac1417d8efc4515a8b7d8c5
-0[31m-----------------------------------------------------------------------------------------------[39m
+Artist: DMX
+Song: X Gon' Give It To Ya
+Album: The Best Of DMX
+Preview Clip URL: null
+1-----------------------------------------------------------------------------------------------
 
 LIRI Response:
 
-Artist: Wu-Tang Clan
-Song: Protect Ya Neck
-Album the song is from: Enter The Wu-Tang
-Preview URL: https://p.scdn.co/mp3-preview/ae95b0c18b40b8434a7b373a81b9d20879fb54df?cid=5decabcbeac1417d8efc4515a8b7d8c5
-1[31m-----------------------------------------------------------------------------------------------[39m
+Artist: blackbear
+Song: wish u the best
+Album: digital druglord
+Preview Clip URL: null
+2-----------------------------------------------------------------------------------------------
 
 LIRI Response:
 
-Artist: Wu-Tang Clan
-Song: Protect Ya Neck - Shao Lin Version
-Album the song is from: Enter The Wu-Tang Clan - 36 Chambers (Deluxe Version)
-Preview URL: https://p.scdn.co/mp3-preview/85d13a5bbd6dae1cac8d12ffa1a39c41741aa69c?cid=5decabcbeac1417d8efc4515a8b7d8c5
-2[31m-----------------------------------------------------------------------------------------------[39m
+Artist: Sofi Tukker
+Song: Best Friend
+Album: Best Friend
+Preview Clip URL: https://p.scdn.co/mp3-preview/006c89a7df0dfb2852041247f4f5ff989f254168?cid=5decabcbeac1417d8efc4515a8b7d8c5
+3-----------------------------------------------------------------------------------------------
 
 User Command: node liri.js spotify-this-song
 
 LIRI Response:
 
-Artist: Wu-Tang Clan
-Song: Protect Ya Neck
-Album the song is from: Enter The Wu-Tang Clan - 36 Chambers (Deluxe Version)
-Preview URL: https://p.scdn.co/mp3-preview/e1e046ca91cf927e535ba512aad294f4f6f4109c?cid=5decabcbeac1417d8efc4515a8b7d8c5
-0[31m-----------------------------------------------------------------------------------------------[39m
+------------------------------------------------------------------------------------------------
+Artist: Ruff Ryders
+Song: Down Bottom
+Album: Ryde Or Die Volume One
+Preview Clip URL: null
+-----------------------------------------------------------------------------------------------
 
 LIRI Response:
 
-Artist: Wu-Tang Clan
-Song: Protect Ya Neck
-Album the song is from: Enter The Wu-Tang
-Preview URL: https://p.scdn.co/mp3-preview/ae95b0c18b40b8434a7b373a81b9d20879fb54df?cid=5decabcbeac1417d8efc4515a8b7d8c5
-1[31m-----------------------------------------------------------------------------------------------[39m
+------------------------------------------------------------------------------------------------
+Artist: DJ Clue
+Song: Ruff Ryders Anthem
+Album: The Professional
+Preview Clip URL: null
+-----------------------------------------------------------------------------------------------
 
 LIRI Response:
 
-Artist: Wu-Tang Clan
-Song: Protect Ya Neck - Shao Lin Version
-Album the song is from: Enter The Wu-Tang Clan - 36 Chambers (Deluxe Version)
-Preview URL: https://p.scdn.co/mp3-preview/85d13a5bbd6dae1cac8d12ffa1a39c41741aa69c?cid=5decabcbeac1417d8efc4515a8b7d8c5
-2[31m-----------------------------------------------------------------------------------------------[39m
+------------------------------------------------------------------------------------------------
+Artist: DMX
+Song: Ruff Ryders Anthem
+Album: It's Dark And Hell Is Hot
+Preview Clip URL: null
+-----------------------------------------------------------------------------------------------
 
 User Command: node liri.js spotify-this-song
 
 LIRI Response:
 
-Artist: Wu-Tang Clan
-Song: Protect Ya Neck
-Album the song is from: Enter The Wu-Tang Clan - 36 Chambers (Deluxe Version)
-Preview URL: https://p.scdn.co/mp3-preview/e1e046ca91cf927e535ba512aad294f4f6f4109c?cid=5decabcbeac1417d8efc4515a8b7d8c5
-0[31m-----------------------------------------------------------------------------------------------[39m
+------------------------------------------------------------------------------------------------
+Artist: Wham!
+Song: Last Christmas
+Album: LAST CHRISTMAS
+Preview Clip URL: https://p.scdn.co/mp3-preview/ad0a6b7428ef900b169449b24c335d885dc029d0?cid=5decabcbeac1417d8efc4515a8b7d8c5
+-----------------------------------------------------------------------------------------------
 
 LIRI Response:
 
-Artist: Wu-Tang Clan
-Song: Protect Ya Neck
-Album the song is from: Enter The Wu-Tang
-Preview URL: https://p.scdn.co/mp3-preview/ae95b0c18b40b8434a7b373a81b9d20879fb54df?cid=5decabcbeac1417d8efc4515a8b7d8c5
-1[31m-----------------------------------------------------------------------------------------------[39m
+------------------------------------------------------------------------------------------------
+Artist: Sia
+Song: Everyday Is Christmas
+Album: Everyday Is Christmas
+Preview Clip URL: https://p.scdn.co/mp3-preview/d04842cf04f8028ee7fd068b461831a2b9e11240?cid=5decabcbeac1417d8efc4515a8b7d8c5
+-----------------------------------------------------------------------------------------------
 
 LIRI Response:
 
-Artist: Wu-Tang Clan
-Song: Protect Ya Neck - Shao Lin Version
-Album the song is from: Enter The Wu-Tang Clan - 36 Chambers (Deluxe Version)
-Preview URL: https://p.scdn.co/mp3-preview/85d13a5bbd6dae1cac8d12ffa1a39c41741aa69c?cid=5decabcbeac1417d8efc4515a8b7d8c5
-2[31m-----------------------------------------------------------------------------------------------[39m
-
-User Command: node liri.js spotify-this-song
-
-LIRI Response:
-
-Artist: Wu-Tang Clan
-Song: Protect Ya Neck
-Album the song is from: Enter The Wu-Tang Clan - 36 Chambers (Deluxe Version)
-Preview URL: https://p.scdn.co/mp3-preview/e1e046ca91cf927e535ba512aad294f4f6f4109c?cid=5decabcbeac1417d8efc4515a8b7d8c5
-0[31m-----------------------------------------------------------------------------------------------[39m
-
-LIRI Response:
-
-Artist: Wu-Tang Clan
-Song: Protect Ya Neck
-Album the song is from: Enter The Wu-Tang
-Preview URL: https://p.scdn.co/mp3-preview/ae95b0c18b40b8434a7b373a81b9d20879fb54df?cid=5decabcbeac1417d8efc4515a8b7d8c5
-1[31m-----------------------------------------------------------------------------------------------[39m
-
-LIRI Response:
-
-Artist: Wu-Tang Clan
-Song: Protect Ya Neck - Shao Lin Version
-Album the song is from: Enter The Wu-Tang Clan - 36 Chambers (Deluxe Version)
-Preview URL: https://p.scdn.co/mp3-preview/85d13a5bbd6dae1cac8d12ffa1a39c41741aa69c?cid=5decabcbeac1417d8efc4515a8b7d8c5
-2[31m-----------------------------------------------------------------------------------------------[39m
-
-User Command: node liri.js spotify-this-song
-
-LIRI Response:
-
-Artist: Wu-Tang Clan
-Song: Protect Ya Neck
-Album: Enter The Wu-Tang Clan - 36 Chambers (Deluxe Version)
-Preview Clip URL: https://p.scdn.co/mp3-preview/e1e046ca91cf927e535ba512aad294f4f6f4109c?cid=5decabcbeac1417d8efc4515a8b7d8c5
-0[31m-----------------------------------------------------------------------------------------------[39m
-
-LIRI Response:
-
-Artist: Wu-Tang Clan
-Song: Protect Ya Neck
-Album: Enter The Wu-Tang
-Preview Clip URL: https://p.scdn.co/mp3-preview/ae95b0c18b40b8434a7b373a81b9d20879fb54df?cid=5decabcbeac1417d8efc4515a8b7d8c5
-1[31m-----------------------------------------------------------------------------------------------[39m
-
-LIRI Response:
-
-Artist: Wu-Tang Clan
-Song: Protect Ya Neck - Shao Lin Version
-Album: Enter The Wu-Tang Clan - 36 Chambers (Deluxe Version)
-Preview Clip URL: https://p.scdn.co/mp3-preview/85d13a5bbd6dae1cac8d12ffa1a39c41741aa69c?cid=5decabcbeac1417d8efc4515a8b7d8c5
-2[31m-----------------------------------------------------------------------------------------------[39m
+------------------------------------------------------------------------------------------------
+Artist: Sia
+Song: Underneath The Christmas Lights
+Album: Everyday Is Christmas
+Preview Clip URL: https://p.scdn.co/mp3-preview/4a28df37a14aaafa450890eebe7ebe3c157c0577?cid=5decabcbeac1417d8efc4515a8b7d8c5
+-----------------------------------------------------------------------------------------------
 
